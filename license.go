@@ -26,7 +26,7 @@ func DecryptLicense(license, secret string) (info LicenseInfo) {
 	info.DBDiskLimitG = 100000000
 	info.CollectionLimit = 100000000
 	info.DocumentLimit = 100000000
-	info.Access = 255
+	info.Access = 0xFFFF
 
 	info.UpdateExpiration = info.AppExpiration
 
